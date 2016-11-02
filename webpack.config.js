@@ -109,7 +109,8 @@ function prepareEntryPoints(entryConfig) {
 module.exports = {
     // We have to add some pathes to entry point in case of using HMR
     entry: prepareEntryPoints({
-        main: path.resolve(`${cwd}/markup/${staticFolderName}/js/main.js`)
+        main: path.resolve(`${cwd}/markup/${staticFolderName}/js/main.js`),
+        vendors: path.resolve(`${cwd}/markup/${staticFolderName}/js/vendors.js`)
     }),
 
     output: {
@@ -127,7 +128,13 @@ module.exports = {
         loaders
     },
 
-    plugins,
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        })
+    ],
 
     resolveLoader: {
         modulesDirectories

@@ -18,10 +18,11 @@ _template: {
 
 'head': {
     defaults: {
-        title: 'default title',
+        title: 'Frontend blog',
         useSocialMetaTags: true
     }
-},
+}
+,
 
 __pages: [{
                 name: 'index',

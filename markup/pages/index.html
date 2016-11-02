@@ -9,7 +9,8 @@
         {{> header/header}}
 
         <section class="section">
-
+          {{> index-intro/index-intro}}
+          {{> index-content/index-content}}
         </section>
 
         <footer class="page__footer">
@@ -20,6 +21,9 @@
         <script>svg4everybody();</script>
 
         <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/codepen-embed.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
         <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
     </body>
 

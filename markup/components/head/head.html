@@ -10,7 +10,7 @@
 <meta name="HandheldFriendly" content="true">
 <!--[if IE 8 ]><link href="%=static=%css/main_ie8%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><![endif]-->
 <!--[if IE 9 ]><link href="%=static=%css/main_ie9%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><link href="/%=static=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><link href="./%=static=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><!--<![endif]-->
 
 {{#if useSocialMetaTags}}
     <meta property="og:title" content="" />
@@ -24,7 +24,10 @@
     <link rel="image_src" href="" />
 {{/if}}
 
-<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="./static/img/general/post-favicons/octocat-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="./static/img/general/post-favicons/octocat-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="./static/img/general/post-favicons/octocat-48x48.png" sizes="48x48">
+
 <script>
     (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
 </script>
