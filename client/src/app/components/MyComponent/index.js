@@ -1,18 +1,8 @@
 export default class MyClass {
   constructor() {
-    this._getCounter = 0;
-    this._setCounter = 0;
-    this._foo = 'bar';
+      particlesJS.load('particles-js', 'app/static/js/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
   }
 
-  get foo() {
-    return this._foo;
-
-  }
-
-  set foo(val) {
-    this._foo = val;
-    return this._foo;
-  }
 }
-console.log($);

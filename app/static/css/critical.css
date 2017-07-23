@@ -1,0 +1,9 @@
+body {
+  font-family: sans-serif;
+  background: #000; }
+
+.critical-class {
+  color: red; }
+
+.cat {
+  transition: border-radius 1s ease-in-out; }
