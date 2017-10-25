@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+}
+
+.contacts {
+  background-color: #E1E6EB;
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contacts__git {
+  padding-bottom: 20px;
+}
+
+.contacts__gmail {
+  padding-bottom: 20px;
+}
+
+.contacts__item {
+  position: relative;
+}
+
+.contacts__item::before {
+  content: "";
+  display: block;
+  position:absolute;
+  width: 30px;
+  height: 30px;
+  left: -35px;
+  top: -14px;
+}
+
+.contacts__git::before {
+  background: url("img/github.svg") no-repeat center;
+  background-size: contain;
+}
+
+.contacts__gmail::before {
+  background: url("img/gmail.svg") no-repeat center;
+  background-size: contain;
+}
+
+.contacts__linkedin::before {
+  background: url("img/linkedin.svg") no-repeat center;
+  background-size: contain;
+}
