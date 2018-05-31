@@ -6,6 +6,7 @@ body {
   background-color: #E1E6EB;
   height: 100vh;
   display:flex;
+  margin-top: 100vh;
   align-items: center;
   justify-content: center;
 }
